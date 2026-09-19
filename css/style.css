@@ -834,5 +834,294 @@
         padding: 12px 20px;
       
         font-size: 14px;
-      }      
-  }
+      }   
+      .about {
+        padding: 40px 0 60px;
+      }
+      
+      .about__container {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 32px;
+      }
+      
+      .about__content {
+        max-width: none;
+      }
+      
+      .about__label {
+        margin-bottom: 14px;
+      
+        font-size: 11px;
+      }
+      
+      .about__title {
+        margin-bottom: 20px;
+      
+        font-size: 42px;
+        line-height: 1;
+      }
+      
+      .about__description {
+        margin-bottom: 24px;
+      
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      
+      .about__image-wrapper {
+        height: 480px;
+        border-radius: 24px;
+      }
+      
+      .about__image {
+        width: 100%;
+        height: 100%;
+      
+        object-fit: cover;
+      }
+      
+      .about__link {
+        display: inline-flex;
+      
+        padding: 12px 20px;
+      
+        color: var(--color-surface);
+        background-color: var(--color-text);
+      
+        border-radius: 999px;
+      
+        font-size: 14px;
+      }
+      .footer {
+        padding: 30px 0;
+      }
+      
+      .footer__container {
+        padding: 36px;
+        text-align: center;
+      }
+      
+      .footer__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      
+        text-align: center;
+      }
+      
+      .footer__brand {
+        grid-column: 1 / -1;
+        text-align: center;
+      }
+      
+      .footer__logo {
+        margin: 0 auto;
+      }
+      
+      .footer__tagline {
+        margin: 18px auto 0;
+      }
+      
+      .footer__navigation {
+        justify-self: center;
+      }
+      
+      .footer__navigation-list {
+        align-items: center;
+      }
+      
+      .footer__contacts {
+        align-items: center;
+      }
+      
+      .footer__socials {
+        justify-content: center;
+      }
+      .catalog-section {
+        padding: 40px 0 70px;
+      }
+      
+      .catalog-title {
+        font-size: 52px;
+      }
+      
+      .catalog-categories {
+        flex-wrap: wrap;
+        margin-bottom: 36px;
+      }
+      
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px 18px;
+      }
+      
+      .product-card__title {
+        font-size: 20px;
+      }
+      
+      .product-card__description {
+        font-size: 13px;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          width: calc(100% - 32px);
+        }
+      
+        .page-header {
+          padding: 12px 0;
+        }
+      
+        .header-container {
+          min-height: 64px;
+          padding: 0 14px;
+          gap: 12px;
+        }
+      
+        .logo-image {
+          width: 48px;
+          height: 48px;
+        }
+      
+        .theme-switcher,
+        .burger {
+          width: 38px;
+          height: 38px;
+        }
+      
+        .hero {
+          padding: 32px 0 48px;
+        }
+      
+        .hero-container {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+      
+        .hero-content {
+          max-width: none;
+        }
+      
+        .hero-title {
+          font-size: 44px;
+          line-height: 0.98;
+        }
+      
+        .hero-description {
+          margin: 20px 0 26px;
+      
+          font-size: 15px;
+          line-height: 1.55;
+        }
+      
+        .hero-link {
+          padding: 13px 22px;
+          font-size: 14px;
+        }
+      
+        .hero-image-wrapper {
+          height: 430px;
+          border-radius: 22px;
+        }
+      }
+      .categories-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      
+      .category-card {
+        min-height: 460px;
+      }
+      
+      .slider-btn {
+        display: none;
+      }
+      .hair-extensions__container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      
+      .hair-extensions__content {
+        order: 1;
+      }
+      
+      .hair-extensions__image-wrapper {
+        order: 2;
+      
+        width: 100%;
+        height: 480px;
+      }
+      
+      .hair-extensions__title {
+        font-size: 42px;
+      }
+      
+      .hair-extensions__description {
+        font-size: 15px;
+      }
+      .about__container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      
+      .about__content {
+        order: 1;
+      }
+      
+      .about__image-wrapper {
+        order: 2;
+      
+        width: 100%;
+        height: 480px;
+      }
+      
+      .about__title {
+        font-size: 42px;
+      }
+      
+      .about__description {
+        font-size: 15px;
+      }
+      .catalog-section {
+        padding: 32px 0 60px;
+      }
+      
+      .catalog-title {
+        margin-bottom: 24px;
+      
+        font-size: 44px;
+      }
+      
+      .catalog-categories {
+        gap: 8px;
+        margin-bottom: 30px;
+      }
+      
+      .category-button {
+        padding: 10px 14px;
+      
+        font-size: 13px;
+      }
+      
+      .catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      
+      .product-card__image {
+        aspect-ratio: 3 / 4;
+      }
+      
+      .product-card__title {
+        font-size: 22px;
+      }
+      
+      .product-card__description {
+        font-size: 14px;
+      }
+      
+      .pagination {
+        flex-wrap: wrap;
+      }
+            
+      }
