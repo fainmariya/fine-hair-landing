@@ -789,7 +789,62 @@
 .navigation-link__arrow {
   display: none;
 }
-
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    margin-top: 48px;
+  }
+  
+  .pagination__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    min-width: 42px;
+    height: 42px;
+    padding: 0 14px;
+  
+    color: var(--color-text);
+    background-color: transparent;
+  
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+  
+    font: inherit;
+    font-size: 14px;
+  
+    cursor: pointer;
+  
+    transition:
+      background-color var(--transition),
+      color var(--transition),
+      border-color var(--transition),
+      transform var(--transition);
+  }
+  
+  .pagination__btn:hover:not(:disabled) {
+    color: var(--color-surface);
+    background-color: var(--color-text);
+  
+    transform: translateY(-2px);
+  }
+  
+  .pagination__btn--current {
+    color: var(--color-surface);
+    background-color: var(--color-text);
+    border-color: var(--color-text);
+  
+    cursor: default;
+  }
+  
+  .pagination__btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+  }
 
   @media (max-width: 768px) {
     .navigation {
