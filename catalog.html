@@ -113,20 +113,27 @@
         <div class="container ">
             <h1 class="catalog-title">Shop Hair</h1>
             <div class="catalog-categories">
-                <button class="category-button category-button--active" type="button">
+                <button class="category-button category-button--active" data-category="all" type="button">
+                    All Itemes
+                </button>
+
+                <button class="category-button" data-category="hair-systems" type="button">
                     Hair Systems
                 </button>
             
-                <button class="category-button" type="button">
+                <button class="category-button" data-category="keratin" type="button">
                     Keratin Extensions
                 </button>
             
-                <button class="category-button" type="button">
+                <button class="category-button" data-category="wefts" type="button">
                     Weft Extensions
                 </button>
+                <button class="category-button" data-category="hair" type="button">
+                    Premium Human Hair
+                  </button>
             </div>
             <div class="catalog-grid">
-              <article class="product-card">
+              <article class="product-card" data-category="hair-systems">
                 <img class="product-card__image" src="./assets/images/HairSystem_Lace.png" alt="Silk top hair system">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Silk Top Hair System</h2>
@@ -135,7 +142,7 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
+              <article class="product-card" data-category="wefts">
                 <img class="product-card__image" src="./assets/images/wefts1.jpeg" alt="wefts">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Wefts</h2>
@@ -144,7 +151,7 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
+              <article class="product-card" data-category="hair">
                 <img class="product-card__image" src="./assets/images/hairs/Hair2_120gm_50cm.png" alt="hair 120gm 50cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair</h2>
@@ -154,7 +161,7 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
+              <article class="product-card" data-category="keratin">
                 <img class="product-card__image" src="./assets/images/hair1-converted.jpg" alt="Keratin extension">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Keratin Extension Hair</h2>
@@ -164,8 +171,8 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
-                <img class="product-card__image" src="./assets/images/hairs/Hair_138gm_50cm.png" alt="Hair 138gm 50 cm">
+              <article class="product-card"  data-category="hair">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_138gm_50cm.png" alt="Premium human hair 138gm 50 cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair</h2>
                   <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
@@ -174,8 +181,8 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
-                <img class="product-card__image" src="./assets/images/hairs/Hair_128gm_55cm.png" alt="Hair 128gm 55cm">
+              <article class="product-card" data-category="hair">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_128gm_55cm.png" alt="Premium human hair 128gm 55cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair</h2>
                   <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
@@ -184,8 +191,8 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
-                <img class="product-card__image" src="./assets/images/hairs/Hair_116gm_50cm.png" alt="Hair 116gm 50 cm">
+              <article class="product-card" data-category="hair">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_116gm_50cm.png" alt="Premium human hair 116gm 50 cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair</h2>
                   <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
@@ -194,8 +201,8 @@
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
-              <article class="product-card">
-                <img class="product-card__image" src="./assets/images/hairs/Hair3_110gm_50cm.png" alt="Hair 110gm Hair_116gm_50cm">
+              <article class="product-card" data-category="hair">
+                <img class="product-card__image" src="./assets/images/hairs/Hair3_110gm_50cm.png" alt="Premium human hair 110gm 50cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair.</h2>
                   <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
@@ -326,6 +333,7 @@
       </footer>
       <script src="./js/theme.js"></script>
       <script src="./js/menu.js"></script>
-      <script src="./js/slider.js"></script>
+      <script src="./js/catalog.js"></script>
+     
 </body>
 </html>
