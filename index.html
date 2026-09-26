@@ -18,12 +18,81 @@
                 >
             </a>
             <nav class="navigation">
-                <ul class="navigation-list">
-                  <li class="navigation-item"><a class="navigation-link" href="./index.html">Home</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="#about">About</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="./catalog.html">Catalog</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="#contacts">Contacts</a></li>
-            </ul>
+                <div class="mobile-menu__panel">
+                    <button
+                        class="mobile-menu__close"
+                        type="button"
+                        aria-label="Close menu"
+                        >
+                        ×
+                    </button>
+                    <ul class="navigation-list">
+                        <li class="navigation-item"><a class="navigation-link" href="./index.html">Home</a></li>
+                        <li class="navigation-item"><a class="navigation-link" href="#about">About</a></li>
+                        <li>
+                            <a
+                              class="navigation-link navigation-link--arrow"
+                              href="./catalog.html"
+                            >
+                              <span>Catalog</span>
+                          
+                              <span
+                                class="navigation-link__arrow"
+                                aria-hidden="true"
+                              >
+                                ›
+                              </span>
+                            </a>
+                          </li>
+                        <li class="navigation-item"><a class="navigation-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                  <div class="catalog-submenu" hidden>
+                    <button
+                      class="catalog-submenu__back"
+                      type="button"
+                    >
+                      ‹ Catalog
+                    </button>
+                  
+                    <ul class="catalog-submenu__list">
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Shop All</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Hair Systems</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Keratin Extensions</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Weft Extensions</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Premium Human Hair</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
               </nav>
               <button
                 class="theme-switcher"
@@ -58,7 +127,7 @@
 
                     <img 
                       class="hero-image"
-                      src="./assets/images/HairSystem_Lace.png">
+                      src="./assets/images/HairSystem_Lace.png"
                       alt="Natuarl hair system"
                     >
                 </div>
@@ -84,12 +153,24 @@
                         <span class="category-label">SHOP</span>
                         <h3 class="category-title">Weft Extensions</h3>
                       </article>
+                      <article class="category-card">
+                        <img class="category-image master-class" src="./assets/images/wefts.jpeg" alt="weft extension">
+                        <span class="category-label">SHOP</span>
+                        <h3 class="category-title">Weft Extensions</h3>
+                      </article>
                   </div>
-                  <button class="slider-btn slider-btn--prev" type="button" aria-label="Previous slide">&#8592;</button>
-                  <button class="slider-btn slider-btn--next" type="button" aria-label="Next slide">&#8594;</button>
+                  
+                 
                 </div>
-
-                
+                <div class="slider-controls">
+                    <span class="slider-counter"></span>
+                    <div class="arrows">
+                    <button class="slider-btn slider-btn--prev" type="button" aria-label="Previous slide">&#8592;</button>
+                    <button class="slider-btn slider-btn--next" type="button" aria-label="Next slide">&#8594;</button>
+                    
+                    </div>  
+                </div>
+                 
         </section>
         <section class="hair-extensions">
           <div class="container hair-extensions__container">
@@ -228,9 +309,10 @@
       
         </div>
       </footer>
-      
+      <script src="./js/theme.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/slider.js"></script>
+
       </body>
       </html>
-      <script src="./js/theme.js"></script>
-</body>
-</html>
+      

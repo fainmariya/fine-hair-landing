@@ -18,12 +18,81 @@
                 >
             </a>
             <nav class="navigation">
-                <ul class="navigation-list">
-                  <li class="navigation-item"><a class="navigation-link" href="./index.html">Home</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="./index.html#about">About</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="./catalog.html">Catalog</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="#contacts">Contacts</a></li>
-            </ul>
+                <div class="mobile-menu__panel">
+                    <button
+                        class="mobile-menu__close"
+                        type="button"
+                        aria-label="Close menu"
+                        >
+                        ×
+                    </button>
+                    <ul class="navigation-list">
+                        <li class="navigation-item"><a class="navigation-link" href="./index.html">Home</a></li>
+                        <li class="navigation-item"><a class="navigation-link" href="#about">About</a></li>
+                        <li>
+                            <a
+                              class="navigation-link navigation-link--arrow"
+                              href="./catalog.html"
+                            >
+                              <span>Catalog</span>
+                          
+                              <span
+                                class="navigation-link__arrow"
+                                aria-hidden="true"
+                              >
+                                ›
+                              </span>
+                            </a>
+                          </li>
+                        <li class="navigation-item"><a class="navigation-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                  <div class="catalog-submenu" hidden>
+                    <button
+                      class="catalog-submenu__back"
+                      type="button"
+                    >
+                      ‹ Catalog
+                    </button>
+                  
+                    <ul class="catalog-submenu__list">
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Shop All</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Hair Systems</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Keratin Extensions</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Weft Extensions</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                  
+                      <li>
+                        <a class="catalog-submenu__link" href="./catalog.html">
+                          <span>Premium Human Hair</span>
+                          <span class="catalog-submenu__arrow" aria-hidden="true">›</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
               </nav>
               <button
                 class="theme-switcher"
@@ -76,7 +145,7 @@
                 <button class="product-card__button" type="button">View Details</button>
               </article>
               <article class="product-card">
-                <img class="product-card__image" src="./assets/images/hair-converted.jpg" alt="hair">
+                <img class="product-card__image" src="./assets/images/hairs/Hair2_120gm_50cm.png" alt="hair 120gm 50cm">
                 <div class="product-card__content">
                   <h2 class="product-card__title">Premium Human Hair</h2>
                   <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
@@ -96,37 +165,41 @@
                 <button class="product-card__button" type="button">View Details</button>
               </article>
               <article class="product-card">
-                <img class="product-card__image" src="./assets/images/HairSystem_Lace.png" alt="Silk top hair system">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_138gm_50cm.png" alt="Hair 138gm 50 cm">
                 <div class="product-card__content">
-                  <h2 class="product-card__title">Silk Top Hair System</h2>
-                  <p class="product-card__description">Natural scalp effect with a lightweight, seamless finish.</p>
+                  <h2 class="product-card__title">Premium Human Hair</h2>
+                  <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
+                    Available in different lengths, shades, and weights for a customized result.</p>
                   <p class="product-card__price">$2000</p>
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
               <article class="product-card">
-                <img class="product-card__image" src="./assets/images/HairSystem_Lace.png" alt="Silk top hair system">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_128gm_55cm.png" alt="Hair 128gm 55cm">
                 <div class="product-card__content">
-                  <h2 class="product-card__title">Silk Top Hair System</h2>
-                  <p class="product-card__description">Natural scalp effect with a lightweight, seamless finish.</p>
+                  <h2 class="product-card__title">Premium Human Hair</h2>
+                  <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
+                    Available in different lengths, shades, and weights for a customized result.</p>
                   <p class="product-card__price">$2000</p>
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
               <article class="product-card">
-                <img class="product-card__image" src="./assets/images/HairSystem_Lace.png" alt="Silk top hair system">
+                <img class="product-card__image" src="./assets/images/hairs/Hair_116gm_50cm.png" alt="Hair 116gm 50 cm">
                 <div class="product-card__content">
-                  <h2 class="product-card__title">Silk Top Hair System</h2>
-                  <p class="product-card__description">Natural scalp effect with a lightweight, seamless finish.</p>
+                  <h2 class="product-card__title">Premium Human Hair</h2>
+                  <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
+                    Available in different lengths, shades, and weights for a customized result.</p>
                   <p class="product-card__price">$2000</p>
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
               </article>
               <article class="product-card">
-                <img class="product-card__image" src="./assets/images/HairSystem_Lace.png" alt="Silk top hair system">
+                <img class="product-card__image" src="./assets/images/hairs/Hair3_110gm_50cm.png" alt="Hair 110gm Hair_116gm_50cm">
                 <div class="product-card__content">
-                  <h2 class="product-card__title">Silk Top Hair System</h2>
-                  <p class="product-card__description">Natural scalp effect with a lightweight, seamless finish.</p>
+                  <h2 class="product-card__title">Premium Human Hair.</h2>
+                  <p class="product-card__description">Premium human hair selected for softness, natural movement, and seamless blending.
+                    Available in different lengths, shades, and weights for a customized result</p>
                   <p class="product-card__price">$2000</p>
                 </div>
                 <button class="product-card__button" type="button">View Details</button>
@@ -252,5 +325,7 @@
         </div>
       </footer>
       <script src="./js/theme.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/slider.js"></script>
 </body>
 </html>
